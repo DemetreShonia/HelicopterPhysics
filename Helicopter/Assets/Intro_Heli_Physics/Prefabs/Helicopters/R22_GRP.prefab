@@ -334,6 +334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4655554225627580512}
   - component: {fileID: -6826181577622393728}
+  - component: {fileID: 4655554225092637234}
   m_Layer: 0
   m_Name: R22_GRP
   m_TagString: Untagged
@@ -376,6 +377,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4655554225092637234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4655554225627580543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1a9aca318a5adf42b6fee84193f2fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vertical: 0
+  _horizontal: 0
 --- !u!1 &4655554225723294806
 GameObject:
   m_ObjectHideFlags: 0
