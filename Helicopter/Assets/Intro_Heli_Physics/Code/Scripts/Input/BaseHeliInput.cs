@@ -8,13 +8,12 @@ namespace Shonia
     {
         #region Variables
         [Header("Base Input Properties")]
-        [SerializeField] float _vertical = 0f;
-        [SerializeField] float _horizontal = 0f;
+        protected float vertical = 0f;
+        protected float horizontal = 0f;
 
         #region Strings
         const string VERTICAL = "Vertical";
         const string HORIZONTAL = "Horizontal";
-
         #endregion
 
         #endregion
@@ -26,11 +25,11 @@ namespace Shonia
         }
         #endregion
         #region Custom Methods
-        protected virtual void HandleInputs() 
+        protected virtual void HandleInputs()
         {
-            _vertical = Input.GetAxis(VERTICAL);
-            _horizontal = Input.GetAxis(HORIZONTAL);
+            vertical = Input.GetAxis(VERTICAL);
+            horizontal = Input.GetAxis(HORIZONTAL);
         }
         #endregion
-    } 
+    }
 }
