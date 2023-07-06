@@ -38,6 +38,7 @@ namespace Shonia
             HandleCollective();
             HandleCyclic();
             HandlePedal();
+            ClampInputs();
         }
 
         protected virtual void HandleThrottle()
@@ -56,6 +57,14 @@ namespace Shonia
         protected virtual void HandlePedal()
         {
             PedalInput = Input.GetAxis(PEDAL);
+        }
+
+        protected void ClampInputs()
+        {
+            _throttleInput = Mathf.Clamp(_throttleInput, -1f, 1f);
+            _collectiveInput = Mathf.Clamp(_collectiveInput, -1f, 1f);
+            _pedalInput = Mathf.Clamp(_pedalInput, -1f, 1f);
+            _cyclicInput = Vector2.ClampMagnitude(_cyclicInput, 1f);
         }
         #endregion
     }
