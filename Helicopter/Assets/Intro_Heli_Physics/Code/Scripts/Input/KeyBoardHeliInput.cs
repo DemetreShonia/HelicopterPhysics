@@ -6,10 +6,10 @@ namespace Shonia
     {
         #region Variables
         [Header("Heli Keyboard Inputs")]
-        private float _throttleInput = 0f;
-        private float _collectiveInput = 0f;
-        private Vector2 _cyclicInput = Vector2.zero;
-        private float _pedalInput = 0f;
+        protected float _throttleInput = 0f;
+        protected float _collectiveInput = 0f;
+        protected Vector2 _cyclicInput = Vector2.zero;
+        protected float _pedalInput = 0f;
 
         public float ThrottleInput { get => _throttleInput; set => _throttleInput = value; }
         public float CollectiveInput { get => _collectiveInput; set => _collectiveInput = value; }
@@ -40,20 +40,20 @@ namespace Shonia
             HandlePedal();
         }
 
-        void HandleThrottle()
+        protected virtual void HandleThrottle()
         {
             _throttleInput = Input.GetAxis(THROTTLE);
         }
-        void HandleCollective()
+        protected virtual void HandleCollective()
         {
             _collectiveInput = Input.GetAxis(COLLECTIVE);
         }
-        void HandleCyclic()
+        protected virtual void HandleCyclic()
         {
             _cyclicInput.y = vertical;
             _cyclicInput.x = horizontal;
         }
-        void HandlePedal()
+        protected virtual void HandlePedal()
         {
             PedalInput = Input.GetAxis(PEDAL);
         }
