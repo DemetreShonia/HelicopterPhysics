@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace IndiePixel
+namespace Shonia
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class IP_BaseRB_Controller : MonoBehaviour
+    public class BaseRBController : MonoBehaviour
     {
         #region Variables
         [Header("Base Properties")]
@@ -28,7 +28,7 @@ namespace IndiePixel
             float finalKG = weightInLbs * lbsToKg;
             weight = finalKG;
             rb = GetComponent<Rigidbody>();
-            if(rb)
+            if (rb)
             {
                 rb.mass = weight;
             }

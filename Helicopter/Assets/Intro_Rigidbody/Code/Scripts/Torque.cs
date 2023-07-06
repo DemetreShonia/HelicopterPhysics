@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using IndiePixel;
-
-public class Torque : IP_BaseRB_Controller
+using Shonia;
+public class Torque : BaseRBController
 {
     #region Varaibles
     public float torqueSpeed = 2f;

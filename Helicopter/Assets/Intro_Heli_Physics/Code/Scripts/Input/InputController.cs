@@ -8,42 +8,46 @@ namespace Shonia
 		Xbox,
 		Mobile
 	}
-	public class InputController : MonoBehaviour
+    [RequireComponent(typeof(KeyBoardHeliInput), typeof(XboxHeliInput))]
+
+    public class InputController : MonoBehaviour
 	{
 		#region Variables
+		[Header("Input Properties")]
 		public InputType inputType = InputType.Keyboard;
-		[Header("Input Components")]
-		public KeyBoardHeliInput keyInput;
-		public XboxHeliInput xboxInput;
+		KeyBoardHeliInput _keyInput;
+		XboxHeliInput _xboxInput;
         #endregion
 
         #region Builtin Methods
         void Start()
 		{
-			SetInputType(inputType);
-		}
+			_keyInput= GetComponent<KeyBoardHeliInput>();
+			_xboxInput = GetComponent<XboxHeliInput>();
+            if (_keyInput && _xboxInput)
+            {
+                SetInputType(inputType);
+            }
+        }
 
 		#endregion
 
 		#region Custom methods
 		void SetInputType(InputType type)
 		{
-			inputType = type;
-			if(keyInput && xboxInput)
-			{
-                if (type == InputType.Keyboard)
-                {
-                    keyInput.enabled = true;
-                    xboxInput.enabled = false;
-                }
-                if (type == InputType.Xbox)
-                {
-                    keyInput.enabled = false;
-                    xboxInput.enabled = true;
-                }
-            }
+			//inputType = type;
 			
-		}
+            if (type == InputType.Keyboard)
+            {
+                _keyInput.enabled = true;
+                _xboxInput.enabled = false;
+            }
+            if (type == InputType.Xbox)
+            {
+                _keyInput.enabled = false;
+                _xboxInput.enabled = true;
+            }
+        }
 		#endregion
 	}
 }

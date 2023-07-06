@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using IndiePixel;
+using Shonia;
 
-public class Forces : IP_BaseRB_Controller
+public class Forces : BaseRBController
 {
     #region Variables
     public float maxSpeed = 1f;
