@@ -11,10 +11,10 @@ namespace Shonia
         protected Vector2 _cyclicInput = Vector2.zero;
         protected float _pedalInput = 0f;
 
-        public float ThrottleInput { get => _throttleInput; set => _throttleInput = value; }
-        public float CollectiveInput { get => _collectiveInput; set => _collectiveInput = value; }
-        public Vector2 CyclicInput { get => _cyclicInput; set => _cyclicInput = value; }
-        public float PedalInput { get => _pedalInput; set => _pedalInput = value; }
+        public float ThrottleInput => _throttleInput;
+        public float CollectiveInput => _collectiveInput;
+        public Vector2 CyclicInput => _cyclicInput;
+        public float PedalInput => _pedalInput;
         #endregion
 
         #region Builtin Methods
@@ -56,7 +56,7 @@ namespace Shonia
         }
         protected virtual void HandlePedal()
         {
-            PedalInput = Input.GetAxis(PEDAL);
+            _pedalInput = Input.GetAxis(PEDAL);
         }
 
         protected void ClampInputs()

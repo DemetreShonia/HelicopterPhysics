@@ -37,7 +37,7 @@ namespace Shonia
         // Update is called once per frame
         void FixedUpdate()
         {
-            if (rb)
+            if (rb != null)
             {
                 HandlePhysics();
             }
