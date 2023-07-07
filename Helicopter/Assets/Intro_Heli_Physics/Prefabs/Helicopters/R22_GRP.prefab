@@ -7728,7 +7728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 140
   maxRPM: 2700
-  powerDelay: 2
+  powerDelay: 0.2
   powerCurve:
     serializedVersion: 2
     m_Curve:
@@ -8099,6 +8099,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0626ffd359c399746838b106fdc69036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lRotor: {fileID: 4368854552694506}
+  rRotor: {fileID: 4949860964248618}
+  maxPitch: 35
 --- !u!1 &1900536421968330
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ namespace Shonia
 			// update or rotors
 			foreach (var rotor in _rotors)
 			{
-				rotor.UpdateRotor(dps);
+				rotor.UpdateRotor(dps, input);
 			}
 		}
 		#endregion

@@ -294,22 +294,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114372588962690528, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
-      propertyPath: powerDelay
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114372588962690528, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
-      propertyPath: powerCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114372588962690528, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
-      propertyPath: powerCurve.m_Curve.Array.data[0].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 114372588962690528, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
-      propertyPath: powerCurve.m_Curve.Array.data[1].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
 --- !u!1 &1123245772
