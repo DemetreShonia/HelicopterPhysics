@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ namespace Shonia
         [Header("Helicopter Properties")]
         public List<HeliEngine> engines = new List<HeliEngine>();
 
+        [Header("Helicopter Rotors")]
+        public HeliRotorController _rotorCtrl;
 		InputController _input;
         #endregion
 
@@ -32,9 +35,12 @@ namespace Shonia
             if (_input != null)
 			{
                 HandleEngines();
+                HandleRotors();
                 HandleCharacteristics();
             }
         }
+
+       
 
         #endregion
 
@@ -46,7 +52,14 @@ namespace Shonia
             {
                 engines[i].UpdateEngine(_input.StickyThrottleInput);
                 float finalHP = engines[i].CurrentHP;
-                print(finalHP);
+            }
+        }
+
+        protected virtual void HandleRotors()
+        {
+            if(_rotorCtrl != null && engines.Count > 0)
+            {
+                _rotorCtrl.UpdateRotors(_input, engines[0].CurrentRPM);
             }
         }
         protected virtual void HandleCharacteristics()

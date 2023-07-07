@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 4209674883625328}
   - component: {fileID: 33467999033527122}
   - component: {fileID: 23246320158047196}
+  - component: {fileID: 1298610844}
   m_Layer: 0
   m_Name: R22_Rotors_TailMast_Geo
   m_TagString: Untagged
@@ -200,6 +201,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1298610844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033921969995636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935419cf1cd0b9c4db2385045547f7f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1036495054383520
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +538,7 @@ MonoBehaviour:
   cog: {fileID: 4276152721908862}
   engines:
   - {fileID: 114372588962690528}
+  _rotorCtrl: {fileID: 1469472253}
 --- !u!1 &1100839637657086
 GameObject:
   m_ObjectHideFlags: 0
@@ -6850,6 +6864,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4641774720349284}
+  - component: {fileID: 1469472253}
   m_Layer: 0
   m_Name: R22_Rotors_GRP
   m_TagString: Untagged
@@ -6874,6 +6889,18 @@ Transform:
   m_Father: {fileID: 4001184441191772}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469472253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769591015084354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215cc8f5e52b97645aaf8b0079573681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1775653567012774
 GameObject:
   m_ObjectHideFlags: 0
@@ -7986,6 +8013,7 @@ GameObject:
   - component: {fileID: 4923617872949758}
   - component: {fileID: 33050844051254852}
   - component: {fileID: 23922796504474666}
+  - component: {fileID: 1844592857}
   m_Layer: 0
   m_Name: R22_Rotors_MainMast_Geo
   m_TagString: Untagged
@@ -8059,6 +8087,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1844592857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886387188313344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0626ffd359c399746838b106fdc69036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1900536421968330
 GameObject:
   m_ObjectHideFlags: 0
