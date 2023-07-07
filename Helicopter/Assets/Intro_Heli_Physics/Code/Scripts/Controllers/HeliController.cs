@@ -44,7 +44,9 @@ namespace Shonia
         {
             for (int i = 0; i < engines.Count; i++)
             {
-                engines[i].UpdateEngine(_input.ThrottleInput);
+                engines[i].UpdateEngine(_input.StickyThrottleInput);
+                float finalHP = engines[i].CurrentHP;
+                print(finalHP);
             }
         }
         protected virtual void HandleCharacteristics()

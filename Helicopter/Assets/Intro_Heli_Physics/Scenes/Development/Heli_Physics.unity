@@ -709,6 +709,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2010884300230259734, guid: 1898ffb0c15d6a64c9d97f72087cef96, type: 3}
+      propertyPath: powerCurve.m_Curve.Array.data[0].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2010884300230259734, guid: 1898ffb0c15d6a64c9d97f72087cef96, type: 3}
+      propertyPath: powerCurve.m_Curve.Array.data[1].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2010884300230259734, guid: 1898ffb0c15d6a64c9d97f72087cef96, type: 3}
+      propertyPath: powerCurve.m_Curve.Array.data[0].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2010884300230259734, guid: 1898ffb0c15d6a64c9d97f72087cef96, type: 3}
+      propertyPath: powerCurve.m_Curve.Array.data[1].outSlope
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4655554225627580512, guid: 1898ffb0c15d6a64c9d97f72087cef96, type: 3}
       propertyPath: m_RootOrder
       value: 3

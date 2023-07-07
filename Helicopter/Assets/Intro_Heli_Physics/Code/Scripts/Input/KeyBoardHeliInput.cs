@@ -10,11 +10,14 @@ namespace Shonia
         protected float _collectiveInput = 0f;
         protected Vector2 _cyclicInput = Vector2.zero;
         protected float _pedalInput = 0f;
+        private float _stickyThrottle;
 
-        public float ThrottleInput => _throttleInput;
+        public float RawThrottleInput => _throttleInput;
         public float CollectiveInput => _collectiveInput;
         public Vector2 CyclicInput => _cyclicInput;
         public float PedalInput => _pedalInput;
+
+        public float StickyThrottle => _stickyThrottle;
         #endregion
 
         #region Builtin Methods
@@ -34,11 +37,15 @@ namespace Shonia
         {
             base.HandleInputs();
 
+            // input methods
             HandleThrottle();
             HandleCollective();
             HandleCyclic();
             HandlePedal();
+
+            // utility methods
             ClampInputs();
+            HandleStickyThrottle();
         }
 
         protected virtual void HandleThrottle()
@@ -65,6 +72,11 @@ namespace Shonia
             _collectiveInput = Mathf.Clamp(_collectiveInput, -1f, 1f);
             _pedalInput = Mathf.Clamp(_pedalInput, -1f, 1f);
             _cyclicInput = Vector2.ClampMagnitude(_cyclicInput, 1f);
+        }
+        protected void HandleStickyThrottle()
+        {
+            _stickyThrottle += RawThrottleInput * Time.deltaTime;
+            _stickyThrottle = Mathf.Clamp01(_stickyThrottle);
         }
         #endregion
     }

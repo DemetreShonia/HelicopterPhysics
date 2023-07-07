@@ -33,7 +33,7 @@ namespace Shonia
             EditorGUILayout.Space();
             
             EditorGUI.indentLevel++;
-            EditorGUILayout.LabelField("Throttle: " + _targetInput.ThrottleInput.ToString("0.00"), EditorStyles.boldLabel);
+            EditorGUILayout.LabelField("Throttle: " + _targetInput.RawThrottleInput.ToString("0.00"), EditorStyles.boldLabel);
             EditorGUILayout.LabelField("Collective: " + _targetInput.CollectiveInput.ToString("0.00"), EditorStyles.boldLabel);
             EditorGUILayout.LabelField("Cyclic: " + _targetInput.CyclicInput.ToString("0.00"), EditorStyles.boldLabel);
             EditorGUILayout.LabelField("Pedal: " + _targetInput.PedalInput.ToString("0.00"), EditorStyles.boldLabel);
