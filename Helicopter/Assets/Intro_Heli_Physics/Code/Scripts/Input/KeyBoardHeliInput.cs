@@ -8,6 +8,7 @@ namespace Shonia
         [Header("Heli Keyboard Inputs")]
         protected float _throttleInput = 0f;
         protected float _collectiveInput = 0f;
+        protected float _stickyCollectiveInput = 0f;
         protected Vector2 _cyclicInput = Vector2.zero;
         protected float _pedalInput = 0f;
         private float _stickyThrottle;
@@ -18,6 +19,7 @@ namespace Shonia
         public float PedalInput => _pedalInput;
 
         public float StickyThrottle => _stickyThrottle;
+        public float StickyCollectiveInput => _stickyCollectiveInput;
         #endregion
 
         #region Builtin Methods
@@ -46,6 +48,7 @@ namespace Shonia
             // utility methods
             ClampInputs();
             HandleStickyThrottle();
+            HandleStickyCollective();
         }
 
         protected virtual void HandleThrottle()
@@ -77,6 +80,12 @@ namespace Shonia
         {
             _stickyThrottle += RawThrottleInput * Time.deltaTime;
             _stickyThrottle = Mathf.Clamp01(_stickyThrottle);
+        }
+
+        protected void HandleStickyCollective()
+        {
+            _stickyCollectiveInput += -CollectiveInput * Time.deltaTime;
+            _stickyCollectiveInput = Mathf.Clamp01(_stickyCollectiveInput);
         }
         #endregion
     }

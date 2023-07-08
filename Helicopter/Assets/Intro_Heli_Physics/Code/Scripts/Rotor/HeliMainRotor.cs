@@ -38,8 +38,8 @@ namespace Shonia
             //pitch the blasdes up and down
             if (lRotor && rRotor)
             {
-                lRotor.localRotation = Quaternion.Euler(input.CollectiveInput * maxPitch, 0, 0);
-                rRotor.localRotation = Quaternion.Euler(-input.CollectiveInput * maxPitch, 0, 0);
+                lRotor.localRotation = Quaternion.Euler(-input.StickyCollectiveInput * maxPitch, 0, 0);
+                rRotor.localRotation = Quaternion.Euler(input.StickyCollectiveInput * maxPitch, 0, 0);
             }
         }
         #endregion

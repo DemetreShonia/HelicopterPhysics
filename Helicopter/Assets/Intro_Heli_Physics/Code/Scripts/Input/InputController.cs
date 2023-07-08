@@ -21,6 +21,7 @@ namespace Shonia
 
         float _throttleInput = 0f;
         float _collectiveInput = 0f;
+        float _stickyCollectiveInput = 0f;
         Vector2 _cyclicInput = Vector2.zero;
         float _pedalInput = 0f;
         float _stickyThrottleInput;
@@ -28,6 +29,7 @@ namespace Shonia
         public float ThrottleInput => _throttleInput;
         public float StickyThrottleInput => _stickyThrottleInput;
         public float CollectiveInput => _collectiveInput;
+        public float StickyCollectiveInput => _stickyCollectiveInput;
         public Vector2 CyclicInput => _cyclicInput;
         public float PedalInput => _pedalInput;
 
@@ -56,6 +58,7 @@ namespace Shonia
                         _cyclicInput = _keyInput.CyclicInput;
                         _pedalInput = _keyInput.PedalInput;
                         _stickyThrottleInput = _keyInput.StickyThrottle;
+                        _stickyCollectiveInput= _keyInput.StickyCollectiveInput;
                         break;
                     case InputType.Xbox:
                         _throttleInput = _xboxInput.RawThrottleInput;
@@ -63,6 +66,7 @@ namespace Shonia
                         _cyclicInput = _xboxInput.CyclicInput;
                         _pedalInput = _xboxInput.PedalInput;
                         _stickyThrottleInput = _xboxInput.StickyThrottle;
+                        _stickyCollectiveInput = _xboxInput.StickyCollectiveInput;
                         break;
                 } 
             }

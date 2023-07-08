@@ -32,7 +32,7 @@ namespace Shonia
         {
             //print("BLURRING");
             float normalizedDPS = Mathf.InverseLerp(0f, maxDps, dps);
-            print(dps);
+            //print(dps);
             int blurTextID = Mathf.FloorToInt(normalizedDPS * blurTextures.Count -1);
             blurTextID = Mathf.Clamp(blurTextID, 0, blurTextures.Count - 1);
             if(blurMaterial && blurTextures.Count > 0 )
