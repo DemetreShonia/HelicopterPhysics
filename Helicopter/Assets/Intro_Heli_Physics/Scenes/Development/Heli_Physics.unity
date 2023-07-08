@@ -246,6 +246,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 110296031, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
+      propertyPath: maxDps
+      value: 329
+      objectReference: {fileID: 0}
+    - target: {fileID: 642912229, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
+      propertyPath: maxDps
+      value: 329
+      objectReference: {fileID: 0}
     - target: {fileID: 1077583768547306, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
       propertyPath: m_Name
       value: R22_GRP

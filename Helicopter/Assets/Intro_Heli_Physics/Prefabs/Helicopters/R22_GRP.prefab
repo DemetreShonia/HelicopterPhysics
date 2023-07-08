@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 33467999033527122}
   - component: {fileID: 23246320158047196}
   - component: {fileID: 1298610844}
+  - component: {fileID: 110296031}
   m_Layer: 0
   m_Name: R22_Rotors_TailMast_Geo
   m_TagString: Untagged
@@ -213,6 +214,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935419cf1cd0b9c4db2385045547f7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lRotor: {fileID: 4849061837731336}
+  rRotor: {fileID: 4902474819095754}
+  maxPitch: 45
+--- !u!114 &110296031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033921969995636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5c8cedc57b0d64db4d1a1224683651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDps: 1000
+  blades:
+  - {fileID: 1262216431979898}
+  - {fileID: 1310478020479862}
+  blurGeo: {fileID: 1100839637657086}
+  blurTextures:
+  - {fileID: 2800000, guid: b386a4b52fdf20c419e016d8bfc38328, type: 3}
+  - {fileID: 2800000, guid: 9d7b5e314a8e4674f840038e26aa9dc4, type: 3}
+  - {fileID: 2800000, guid: 982d2602a8a3b2d4db18a4c84bfbda55, type: 3}
+  - {fileID: 2800000, guid: 100c599a2d97c044e8ec80deab3820ea, type: 3}
+  - {fileID: 2800000, guid: f3d6503afda2cbb4eb78aa34a0b0204d, type: 3}
+  - {fileID: 2800000, guid: db0d2d5bf8c3eed44940add47cc29740, type: 3}
+  - {fileID: 2800000, guid: d4ebdebcff4d59a47a1c634ea0edb29e, type: 3}
+  - {fileID: 2800000, guid: e7c3198a01922d240b128a02f16b0f73, type: 3}
+  - {fileID: 2800000, guid: fd5bdfd071ee2674399772bd38828c4d, type: 3}
+  - {fileID: 2800000, guid: 1c739f0df37149547b83ee86f1b71ab5, type: 3}
+  blurMaterial: {fileID: 2100000, guid: b4773d262a259d745832ae23827530ff, type: 2}
 --- !u!1 &1036495054383520
 GameObject:
   m_ObjectHideFlags: 0
@@ -8014,6 +8047,7 @@ GameObject:
   - component: {fileID: 33050844051254852}
   - component: {fileID: 23922796504474666}
   - component: {fileID: 1844592857}
+  - component: {fileID: 642912229}
   m_Layer: 0
   m_Name: R22_Rotors_MainMast_Geo
   m_TagString: Untagged
@@ -8102,6 +8136,35 @@ MonoBehaviour:
   lRotor: {fileID: 4368854552694506}
   rRotor: {fileID: 4949860964248618}
   maxPitch: 35
+--- !u!114 &642912229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886387188313344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5c8cedc57b0d64db4d1a1224683651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDps: 1000
+  blades:
+  - {fileID: 1424911856324482}
+  - {fileID: 1151209926427960}
+  blurGeo: {fileID: 1526170400840368}
+  blurTextures:
+  - {fileID: 2800000, guid: fbbf55dfa1024e245badd246696f6cfa, type: 3}
+  - {fileID: 2800000, guid: c981b2c180599d644a9c432b09196a4f, type: 3}
+  - {fileID: 2800000, guid: bc755d4c6ef365945a15b26dbc14bce1, type: 3}
+  - {fileID: 2800000, guid: 8a5e73e576912554a9a6e0f2534c7567, type: 3}
+  - {fileID: 2800000, guid: 8a6f2a277c8266248b48ace30a57a3b8, type: 3}
+  - {fileID: 2800000, guid: 22296aaa2494fb64ca453e13c3ad4459, type: 3}
+  - {fileID: 2800000, guid: 6dc3e3449e0eed949a13e1e5bc062a26, type: 3}
+  - {fileID: 2800000, guid: ed3134fc98a404a41aed092e53506785, type: 3}
+  - {fileID: 2800000, guid: 7068257164979f64fa4e07d401476b4f, type: 3}
+  - {fileID: 2800000, guid: 52c95cced04f28141b39f5ea47ad81dc, type: 3}
+  blurMaterial: {fileID: 2100000, guid: 7107586acaaa1684882bebd97b029778, type: 2}
 --- !u!1 &1900536421968330
 GameObject:
   m_ObjectHideFlags: 0
