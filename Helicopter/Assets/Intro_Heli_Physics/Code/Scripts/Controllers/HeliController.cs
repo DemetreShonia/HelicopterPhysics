@@ -14,6 +14,7 @@ namespace Shonia
         [Header("Helicopter Rotors")]
         public HeliRotorController _rotorCtrl;
 		InputController _input;
+        HeliCharacteristics _characteristics;
         #endregion
 
         #region Builtin Methods
@@ -21,12 +22,9 @@ namespace Shonia
         {
             base.Start();
             _input = GetComponent<InputController>();
+            _characteristics = GetComponent<HeliCharacteristics>();
         }
 
-        void Update()
-		{
-		
-		}
         #endregion
 
         #region Custom methods
@@ -64,7 +62,10 @@ namespace Shonia
         }
         protected virtual void HandleCharacteristics()
         {
-
+            if (_characteristics)
+            {
+                _characteristics.UpdateCharacteristics(rb, _input);
+            }
         }
 
         #endregion

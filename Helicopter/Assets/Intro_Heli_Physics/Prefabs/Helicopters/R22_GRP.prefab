@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5c8cedc57b0d64db4d1a1224683651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDps: 1000
+  maxDps: 329
   blades:
   - {fileID: 1262216431979898}
   - {fileID: 1310478020479862}
@@ -472,6 +472,7 @@ GameObject:
   - component: {fileID: 4427245729194630703}
   - component: {fileID: 2397608813194979225}
   - component: {fileID: 642912226}
+  - component: {fileID: 3255524898400379040}
   m_Layer: 0
   m_Name: R22_GRP
   m_TagString: Untagged
@@ -572,6 +573,18 @@ MonoBehaviour:
   engines:
   - {fileID: 114372588962690528}
   _rotorCtrl: {fileID: 1469472253}
+--- !u!114 &3255524898400379040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077583768547306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b64b8d17cd8e91429448cc53cdfe3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1100839637657086
 GameObject:
   m_ObjectHideFlags: 0
@@ -8148,7 +8161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5c8cedc57b0d64db4d1a1224683651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDps: 1000
+  maxDps: 329
   blades:
   - {fileID: 1424911856324482}
   - {fileID: 1151209926427960}

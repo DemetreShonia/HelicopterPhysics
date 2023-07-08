@@ -39,6 +39,7 @@ namespace Shonia
             // calculate RPM
             float wantedRPM = throttleInput * maxRPM;
             _currentRPM = Mathf.Lerp(_currentRPM, wantedRPM, Time.deltaTime * powerDelay);
+			print(wantedRPM);
         }
         #endregion
     }

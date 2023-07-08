@@ -12,16 +12,13 @@ namespace Shonia
 
         #endregion
 
+        #region Properties
+        float _currentRPMs;
+        public float CurrentRPMs => _currentRPMs;
+        #endregion
+
         #region Builtin Methods
-        void Start()
-        {
 
-        }
-
-        void Update()
-        {
-
-        }
         #endregion
 
         #region Custom methods
@@ -31,9 +28,11 @@ namespace Shonia
         #region Interface Methods
         public void UpdateRotor(float dps, InputController input)
         {
+            _currentRPMs = (dps / 360) * 60f;
+            //print(dps);
             //print("MAIN");
             //transform.rotation = Quaternion.Euler(0f, dps, 0f);
-            transform.Rotate(Vector3.up, dps);
+            transform.Rotate(Vector3.up, dps * Time.deltaTime);
 
             //pitch the blasdes up and down
             if (lRotor && rRotor)
