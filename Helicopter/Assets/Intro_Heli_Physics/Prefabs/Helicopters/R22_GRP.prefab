@@ -568,7 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6fb3314af78f1946aab80097063d39e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weightInLbs: 10
+  weightInLbs: 1200
   cog: {fileID: 4276152721908862}
   engines:
   - {fileID: 114372588962690528}
@@ -585,6 +585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b64b8d17cd8e91429448cc53cdfe3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLiftForce: 100
+  mainRotor: {fileID: 1844592857}
 --- !u!1 &1100839637657086
 GameObject:
   m_ObjectHideFlags: 0
@@ -6947,6 +6949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215cc8f5e52b97645aaf8b0079573681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxDPS: 3000
 --- !u!1 &1775653567012774
 GameObject:
   m_ObjectHideFlags: 0
@@ -8161,7 +8164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5c8cedc57b0d64db4d1a1224683651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDps: 329
+  maxDps: 3000
   blades:
   - {fileID: 1424911856324482}
   - {fileID: 1151209926427960}

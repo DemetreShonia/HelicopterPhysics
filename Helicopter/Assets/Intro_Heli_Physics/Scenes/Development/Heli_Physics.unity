@@ -246,10 +246,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 642912229, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
-      propertyPath: maxDps
-      value: 3000
-      objectReference: {fileID: 0}
     - target: {fileID: 1077583768547306, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
       propertyPath: m_Name
       value: R22_GRP
@@ -297,6 +293,18 @@ PrefabInstance:
     - target: {fileID: 4001184441191772, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54767319114148864, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114372588962690528, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
+      propertyPath: powerDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255524898400379040, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
+      propertyPath: maxLiftForce
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e933429b2caf51542baa5b3efa4471a5, type: 3}
