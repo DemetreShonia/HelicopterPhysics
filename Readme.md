@@ -4,7 +4,7 @@ This repository contains the code and resources for the Helicopter Game develope
 
 ## 📷 Overview
 
-The project showcases essential concepts in 3D physics, focusing on helicopter flight mechanics and realistic movement simulation. It features engine scripts that simulate real helicopter physics, including horsepower and other dynamics, all implemented in C# with a well-structured code architecture.
+The project showcases essential concepts in 3D physics, focusing on helicopter flight mechanics and realistic movement simulation. It features engine and rotor scripts that simulate real helicopter physics, including horsepower and other dynamics, all implemented in C# with a well-structured code architecture.
 
 ## 📐 Features
 - Realistic helicopter controls
@@ -12,4 +12,5 @@ The project showcases essential concepts in 3D physics, focusing on helicopter f
 - Customizable flight dynamics
 - Interactive environment
 
-![image](https://github.com/user-attachments/assets/37e044ea-5d9b-4064-854e-01e2d345d27d)
+![image](https://github.com/user-attachments/assets/7372d81f-1a46-422a-bc70-cfbd721ba4de)
+
